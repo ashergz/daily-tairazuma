@@ -6,6 +6,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 export const SEARCH_ENDPOINT = "https://www.reddit.com/r/Seihantai/search.json";
 export const OAUTH_TOKEN_ENDPOINT = "https://www.reddit.com/api/v1/access_token";
 export const OAUTH_SEARCH_ENDPOINT = "https://oauth.reddit.com/r/Seihantai/search";
+export const COVER_URL = "https://daily-tairazuma.pages.dev/cover2.jpg";
 export const SEARCH_PARAMS = {
   q: "author:dark074",
   include_over_18: "on",
@@ -317,6 +318,8 @@ export function buildArchive(posts, existing = null) {
     title: "Daily Tairazuma",
     description: "Gallery archive for u/Dark074 in r/Seihantai.",
     author: "u/Dark074",
+    artist: "@allegro365sui",
+    cover: COVER_URL,
     chapters: {}
   };
 
