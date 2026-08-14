@@ -1,0 +1,6 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "daily-tairazuma",
+  "pages_build_output_dir": "./pages",
+  "compatibility_date": "2026-08-14"
+}
