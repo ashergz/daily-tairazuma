@@ -3,6 +3,7 @@ import test from "node:test";
 import {
   buildArchive,
   classifyPost,
+  COVER_URL,
   fetchRedditOAuthPosts,
   parseRedditRss,
   serializeArchive
@@ -89,6 +90,8 @@ test("removes a previously misclassified post when Reddit now identifies it as n
 test("serializes valid deterministic JSON", () => {
   const parsed = JSON.parse(serializeArchive(buildArchive([gallery])));
   assert.equal(parsed.title, "Daily Tairazuma");
+  assert.equal(parsed.artist, "@allegro365sui");
+  assert.equal(parsed.cover, COVER_URL);
   assert.equal(parsed.chapters["1"].last_updated, 100);
 });
 
