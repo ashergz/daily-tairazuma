@@ -90,7 +90,7 @@ test("removes a previously misclassified post when Reddit now identifies it as n
 test("serializes valid deterministic JSON", () => {
   const parsed = JSON.parse(serializeArchive(buildArchive([gallery])));
   assert.equal(parsed.title, "Daily Tairazuma");
-  assert.equal(parsed.artist, "@allegro365sui");
+  assert.equal(parsed.artist, "Artists: @pt_zm69, @puri*8x4, @mod987651, @allegro365sui, @harutk17, @konbutuyutuyu, @curuc*, and more");
   assert.equal(parsed.cover, COVER_URL);
   assert.equal(parsed.chapters["1"].last_updated, 100);
 });
