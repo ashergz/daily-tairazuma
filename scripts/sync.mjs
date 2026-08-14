@@ -318,7 +318,7 @@ export function buildArchive(posts, existing = null) {
     title: "Daily Tairazuma",
     description: "Gallery archive for u/Dark074 in r/Seihantai.",
     author: "u/Dark074",
-    artist: "@pt_zm69\n@puri_8x4\n@mod987651\n@allegro365sui\n@harutk17\n@konbutuyutuyu\n@curuc_\nand more",
+    artist: "@pt_zm69, @puri_8x4, @mod987651, @allegro365sui, @harutk17, @konbutuyutuyu, @curuc_, and more",
     cover: COVER_URL,
     chapters: {}
   };
