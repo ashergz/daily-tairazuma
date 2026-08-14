@@ -1,0 +1,27 @@
+{
+  "name": "daily-tairazuma-sync",
+  "main": "./src/index.mjs",
+  "compatibility_date": "2026-08-14",
+  "workers_dev": true,
+  "triggers": {
+    "crons": ["*/5 * * * *"]
+  },
+  "vars": {
+    "GITHUB_REPO": "ashergz/daily-tairazuma",
+    "GITHUB_BRANCH": "main",
+    "REDDIT_USER_AGENT": "web:daily-tairazuma-sync:1.0 (archive reader)"
+  },
+  "secrets": {
+    "required": ["GITHUB_TOKEN"]
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    }
+  }
+}
